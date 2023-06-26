@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="case">
+        <div class="screen">
+            <h1 class="display"></h1>
+        </div>
+
+        <div class="topButtonsContainer">
+            <button class="deleteButton">DELETE</button>
+            <button class="clearButton">CLEAR</button>
+        </div>
+
+        <div class="buttons">
+            <div class="digits">
+                <div class="digit" onclick="appendDigit(1)">1</div>
+                <div class="digit" onclick="appendDigit(2)">2</div>
+                <div class="digit" onclick="appendDigit(3)">3</div>
+                <div class="digit" onclick="appendDigit(4)">4</div>
+                <div class="digit" onclick="appendDigit(5)">5</div>
+                <div class="digit" onclick="appendDigit(6)">6</div>
+                <div class="digit" onclick="appendDigit(7)">7</div>
+                <div class="digit" onclick="appendDigit(8)">8</div>
+                <div class="digit" onclick="appendDigit(9)">9</div>
+                <div class="digit" onclick="appendDigit(0)">0</div>
+            </div>
+
+            <div class="symbols">
+                <div class="symbol" onclick="appendSymbol('*')"><span>*</span></div>
+                <div class="symbol" onclick="appendSymbol('/')"><span>/</span></div>
+                <div class="symbol" onclick="appendSymbol('+')"><span>+</span></div>
+                <div class="symbol" onclick="appendSymbol('-')"><span>-</span></div>
+                <div class="symbol" onclick="calculate()"><span>=</span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

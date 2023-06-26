@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+
+    .case{
+        width: 400px;
+        height: 600px;
+        border: 1px solid black;
+        border-radius: 1rem;
+        margin: 5% auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(151, 151, 151);
+        
+        
+        .screen{
+            border: 1px solid black;
+            border-radius: 1rem;
+            background-color: rgba(107, 117, 101, 0.753);
+            width: 90%;
+            height: 170px;
+            margin-top: 20px;
+            justify-content: center;
+            
+            h1{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        .topButtonsContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+           
+
+            button{
+                width: 42%;
+                height: 50px;
+                border-radius: 5px;
+            }
+
+            .deleteButton{
+                background-color: rgb(230, 81, 81);
+            }
+        }
+
+        .buttons{
+            height: 320px;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: nowrap;
+            
+            padding: 0 22px;
+            
+
+            .digits{
+                display: flex;
+                flex-wrap: wrap;
+                
+
+                .digit{
+                    width: 82px;
+                    height: 80px;
+                    padding: 30px 35px;
+                    border: 1px solid black;
+                    background-color: royalblue;
+                }
+                .digit:hover{background-color: rgb(99, 131, 226);}
+            }
+
+            .symbols{
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+
+                .symbol{
+                    width: 82px;
+                    height: 80px;
+                    text-align: center;
+                    padding: 20px 0;
+                    border: 1px solid black;
+                    background-color: royalblue;
+                }
+                .symbol:hover{background-color: rgb(99, 131, 226);}
+            }
+        }
+    }
+}
